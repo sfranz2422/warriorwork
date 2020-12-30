@@ -3,7 +3,7 @@
 *.pyc
 __pycache__/
 local_settings.py
-/static/
+
 .env
 .venv
 env/
