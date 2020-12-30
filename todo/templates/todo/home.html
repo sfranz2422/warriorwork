@@ -1,0 +1,15 @@
+{% extends 'todo/base.html' %}
+
+{% block content %}
+
+<h3>Welcome to Warrior Work</h3>
+<p>Login to Continue</p>
+<div class="form-group">
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button class="btn btn-success" type="submit">Login</button>
+</form>
+</div>
+
+{% endblock %}

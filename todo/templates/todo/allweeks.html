@@ -1,0 +1,26 @@
+{% extends 'todo/base.html' %}
+
+{% block content %}
+
+
+<h3>Lessons</h3>
+
+<ul class="list-unstyled">
+  {% for week in weeks %}
+  <a href="{% url 'viewweek' week.id %}">
+  <li>
+    <!-- also passing in a parameter for the primary key -->
+
+    {{ week.week }}
+
+    </li>
+    </a>
+
+
+
+  {% endfor %}
+
+</ul>
+
+
+{% endblock %}
