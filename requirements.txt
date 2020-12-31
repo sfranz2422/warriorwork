@@ -47,3 +47,4 @@ ujson==4.0.1
 urllib3==1.26.2
 wrapt==1.12.1
 yapf==0.30.0
+djangorestframework==3.11.0

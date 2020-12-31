@@ -43,8 +43,7 @@ INSTALLED_APPS = [
     "ckeditor",
     'api',
     'rest_framework',
-    'bootstrap4',
-    'bootstrap_datepicker_plus',
+    
 
 
 
