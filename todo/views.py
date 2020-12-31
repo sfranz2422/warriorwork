@@ -132,7 +132,7 @@ def createweek(request):
             newweek.save()
             return redirect('allweeks')
         except ValueError:
-            return render(request, 'todo/createweek.html', {'form': form, "error": "Bad or missing data. You must enter text for every day."})
+            return render(request, 'todo/createweek.html', {'form': form, "error": "Bad or missing data. You must enter text for every day and date must be in the form 02/16/21"})
 
 # @login_required
 # def completetodo(request, week_pk):

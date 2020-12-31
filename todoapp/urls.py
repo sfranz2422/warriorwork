@@ -27,7 +27,7 @@ urlpatterns = [
     path('login/', views.loginuser, name='loginuser'),
     path('logout/', views.logoutuser, name='logoutuser'),
 
-    
+
 
     #Todo
     path('', views.home, name='home'),
@@ -35,8 +35,11 @@ urlpatterns = [
     # this path takes the primary key of the today in the url
     path('todo/<int:week_pk>', views.viewweek, name='viewweek'),
     path('todo/<int:week_pk>/delete', views.deleteweek, name='deleteweek'),
-    path('allweeks/', views.allweeks, name='allweeks')
+    path('allweeks/', views.allweeks, name='allweeks'),
 
+
+    # api
+    path('api/', include('api.urls')),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
